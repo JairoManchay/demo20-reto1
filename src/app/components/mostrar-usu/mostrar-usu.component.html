@@ -1,0 +1,22 @@
+
+<section class="container mt-3">
+  <section class="row">
+    <article class="col-12">
+      <h3>Usuarios</h3>
+
+      <button class="btn btn-primary mt-3" (click)="butonClick()">
+        Mostrar Usuarios
+      </button>
+      <button class="btn btn-primary mt-3 ms-3" (click)="hideData()">
+        Ocultar
+      </button>
+    </article>
+    <hr class="mt-4">
+    <article class="col-12">
+      <section *ngIf="valor==true">
+        <app-usuarios ></app-usuarios>
+      </section>
+
+    </article>
+  </section>
+</section>
